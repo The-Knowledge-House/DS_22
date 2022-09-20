@@ -1,11 +1,6 @@
 # loops_conditionals
 
 
-
-## Expected Output
-
-
-
 ## Challenge
 
 
