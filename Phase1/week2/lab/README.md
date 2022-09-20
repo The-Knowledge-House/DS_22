@@ -58,9 +58,11 @@ Once you've completed this code, you can try out your code by running `python pa
 
 ### Challenge: Prime Palindromes
 
-If you've completed both features above, feel free to try out the *prime palindromes* challenge. Once again you'll be checking if an integer is a palindrome, but this time with a twist: you will also be checking if each digit is a prime number! 
+If you've completed both features above, feel free to try out the *prime palindromes* challenge. Once again you'll be checking if an integer is a palindrome, but this time with a twist: you will also be checking if the number is a prime number! 
 
-There are a variety
+There are a variety of methods to finding out if a problem is prime. I encourage you all to explore the [FAQ Section](#FAQ) in order to explore these different paths to success.
+
+Once you've completed this code, you can try out your code by running `python palnumber.py 757`, which should print out `True`.
 
 <br/>
 
