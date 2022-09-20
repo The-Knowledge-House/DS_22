@@ -30,27 +30,46 @@ Insert how many levels of steps: 1
 ##
 ```
 
-If you feel comfortable with this task, then try out "fibonacci" stairs. 
+If you feel comfortable with this task, then try out [quadratic](https://en.wikipedia.org/wiki/Quadratic_function) stairs. 
 
 ```
-python fib_stairs.py 
+python quad_stairs.py 
 Insert how many levels of steps: 3
-   #
-  ###
-#######
+
+  ##
+  ## 
+ ####
+######
+
 
 python fib_stairs.py 
-Insert how many levels of steps: 5
-    ##
-    ##
-   ####
-  ######
-##########
+Insert how many levels of steps: 4
+
+   ##
+   ##
+   ##
+   ##
+  ####
+  ####
+ ######
+########
+
+python fib_stairs.py 
+Insert how many levels of steps: 2
+
+ ##
+####
 ```
 
 <br/>
 
 ## Background
+
+### Constructing stairs
+
+
+
+### Quadratic Sequence
 
 
 
@@ -84,19 +103,14 @@ Insert how many levels of steps: 5
 
 ## Setting up the lab
 
-
+To set up your lab, go ahead download the *zip* file located in this folder and extract. This is how we will get all our starter-files and test-files.
 
 <br/>
-
-## Testing
-
-
-
 
 ## Submission
 
 To submit, simply provide a link to your GitHub link containing completed code. Be sure to include comments, and ensure that your code passes all tests!
 
 Only the following files should be modified for this lab:
-* palnumber.py
-* primepalnumber.py (optional)
+* stairs.ipynb
+* quad_stairs.ipynb (optional)
