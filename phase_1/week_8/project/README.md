@@ -12,7 +12,7 @@ Since the computing environment at `Godel Trading` does not include 3rd party mo
 
 You will focus on analyzing 5 stock ticker names of your choice in order to demonstrate the functionality of this pipeline. For example, if you'd like to analyze Google, Amazon, Coursera, Netflix, and Facebook, you would utilize the following names within your code: `GOOG`, `AMZN`, `COUR`, `NFLX`, and `META`.
 
-You will use these names to load 2022 daily stock data into a csv from the [Polygon](https://polygon.io/). You will then use this subequent csv file to generate a report on each respective stock's total volume, average opening price, and average closing price per year.
+You will use these names to load 2022 daily stock data into a csv from  [Polygon](https://polygon.io/). You will then use this subequent csv file to generate a report on each respective stock's total volume, average opening price, and average closing price per year.
 
 ## FAQ
 
