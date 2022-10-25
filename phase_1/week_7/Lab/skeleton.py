@@ -20,7 +20,9 @@ with open() as infile:
     pass
 
 with open("highest_gdp.csv", "w") as outfile:
-    # open dict
+    # create dictwriter object
+
+    # write dictionary as csv using dictwriter object
     pass
 
 

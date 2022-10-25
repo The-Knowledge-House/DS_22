@@ -8,6 +8,13 @@ We will create our list of years using the following line of code:
 years = [str(year) for year in range(1997, 2021)]
 ```
 
+For validation, your csv file should look like this:
+
+
+
+You will also create a csv file that describes which state had the lowest GDP for each year.
+
+For validation, your csv file should look like this:
 
 ## Challenge
 
