@@ -6,6 +6,9 @@ def get_highest_gdp(data, year):
 def get_lowest_gdp(data, year):
     pass
 
+def get_state_gdp(data, state, year):
+    pass
+
 # save each row into a list (TODO: change to your path!)
 list_data = []
 with open("data/state_gdp_analysis.csv", "r") as infile:

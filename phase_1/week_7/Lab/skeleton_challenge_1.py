@@ -1,12 +1,6 @@
 import csv
 
-# code to get years from 1997 to 2020
-years = [str(y) for y in range(1997, 2021)]
-col_names = ["Year", "State"]
-
-# create empty dictionaries
-year_highest = {}
-year_lowest = {}
+years = [str(year) for year in range(1997, 2021)]
 
 def get_highest_gdp(data, year):
     pass
@@ -23,6 +17,8 @@ with open("data/state_gdp_analysis.csv", "r") as infile:
     for row in reader:
         list_data.append(row)
 
+highest_gdp = {}
+lowest_gdp = {}
 for year in years:
     # save each result in the year_highest & year_lowest dictionaries
     pass

@@ -1,4 +1,4 @@
-## GDP Analysis
+# GDP Analysis
 
 For this practice, you will create the following 2 functions:
 
