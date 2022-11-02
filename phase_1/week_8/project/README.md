@@ -8,6 +8,12 @@ Specifically, this script will utilize the [Polygon API](https://polygon.io/) in
 
 Since the computing environment at `Godel Trading` does not include 3rd party modules such as `pandas` or `numpy`, we will have to solely rely on the built-in [functions](https://docs.python.org/3/library/functions.html) and [modules](https://docs.python.org/3/py-modindex.html) of Python.
 
+## NOTES
+1. read the docs for requests
+    * give general structure and concepts
+2. Quick run-down of csv methods
+3. Squeeze in API
+
 ## Data and Output
 
 You will focus on analyzing 5 stock ticker names of your choice in order to demonstrate the functionality of this pipeline. For example, if you'd like to analyze Google, Amazon, Coursera, Netflix, and Facebook, you would utilize the following names within your code: `GOOG`, `AMZN`, `COUR`, `NFLX`, and `META`.
