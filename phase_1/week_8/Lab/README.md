@@ -89,7 +89,7 @@ state_data = [row for row in list_data if condition]
 
 5. Document your code.
 
-6. (Challenge) combine all the above logic into one function that takes in `state` and `column` strings:
+6. (Optional Challenge) combine all the above logic into one function that takes in `state` and `column` strings:
 ```python
 def filter(state, column):
 ```
