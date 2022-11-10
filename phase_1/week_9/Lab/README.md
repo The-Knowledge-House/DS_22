@@ -51,7 +51,7 @@ Consider how you could potentially translate this to list comprehension.
 
 ### Percent Change
 
-For this project, you will create a function called `def percent_change(list_data, year1, year2)` that takes in your list of dictionaries `list_data`, and two string years `year1` and `year2` and will return the percent change from year1 to year2.
+For this project, you will create a function called `def percent_change(list_data, year1, year2, column)` that takes in your list of dictionaries `list_data`, and two string years `year1` and `year2` and will return the percent change from year1 to year2 of `column`.
 
 For reference, percent change is the following [formula](https://www.wallstreetmojo.com/percentage-change-formula/). 
 
