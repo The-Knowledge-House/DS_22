@@ -74,7 +74,7 @@ You will utilize your list of `years` to get each possible sequenced pair of yea
 For example:
 
 ```python
-for i in range(0, len(years), 2):
+for i in range(0, len(years)):
     year1 = years[i]
     year2 = years[i+1]
 
@@ -104,7 +104,7 @@ def func():
         Description of anonymous integer return value.
     """
 ```
-
+.
 In addition, all of our code should be appropriately commented, and your `README.md` should be updated to describe any additional functionality in your code.
 
 ### (Optional) Write to CSV
