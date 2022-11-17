@@ -24,7 +24,7 @@ Modify your `README.md` with a short descriptor of your project.
 
 ## Step 4
 
-Git add, commit, and push your changes.
+Git add, commit, and push your changes. You will be submitting a link to your GitHub project.
 
 ## Challenge 1 (Optional)
 
