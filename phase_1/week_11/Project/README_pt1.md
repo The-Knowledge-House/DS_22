@@ -48,25 +48,14 @@ For now this file will only include the title of your repo along with a short de
 
 Feel free to name this repository any descriptive name that describes the goal of this project!
 
-## Part 2
-
-Once you have set your project up, you will create Python code within `extract.py` that requests the closing price of your 5 companies from the Polygon API from April 1 2021 to April 1 2022, and saves each day
-
-## Part 3 (Challenge + Extra Credit)
-
-Create a line plot of standard deviations of your 5 graphs
-
 ## FAQ
 
 ### Using an API
 
 To complete this project, you will need to sign up for a free API key via [Polygon](https://polygon.io/). 
 
-### Using the CSV Module
-
-To write & read data, we will be utilizing the [csv](https://docs.python.org/3/library/csv.html).
-
 ## Documentation
+
 ### DocStrings & Comments
 
 Ensure that your project is appropriately commented with all necessary comments and docstrings. That is, if you have created a class, this class must also contain a docstring. Singular functions must also contain a docstring if they are not attached to a class.

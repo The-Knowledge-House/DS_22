@@ -1,0 +1,30 @@
+# Stock Performance
+
+## Part 2
+
+Once you have set your project up, you will create Python code within `extract.py` that requests the closing price of your 5 companies from the Polygon API from April 1 2021 to April 1 2022, and saves each day and price into two seperate lists (one called `day` and one called `closing price`). 
+
+```
+[6.81, 6.43, 6.21, ...]
+["2021-04-01T00:00:00.000Z", "2021-04-02T00:00:00.000Z", "2020-04-03T00:00:00.000Z", ...]
+```
+
+Alternatively you can also save each price and day to a list of dictionaries that have the keys `day` and `price`. 
+
+Consider how either data-structure will influence the format of your csv file.
+
+Now that you have this data loaded into a data-structure, you will write it into a csv file via the `open()` function and the `csv` module.
+
+The code below should serve as a template as to how we could do this:
+
+```python
+with open("STOCK.csv", "w", newline='') as outfile:
+    writer = csv.writer(outfile)
+    # how can I take either my two lists or my dictionary and write them to my outfile?
+```
+
+## FAQ
+
+### Using the CSV Module
+
+To write & read data, we will be utilizing the [csv](https://docs.python.org/3/library/csv.html).
