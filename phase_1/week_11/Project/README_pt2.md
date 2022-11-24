@@ -28,3 +28,7 @@ with open("STOCK.csv", "w", newline='') as outfile:
 ### Using the CSV Module
 
 To write & read data, we will be utilizing the [csv](https://docs.python.org/3/library/csv.html).
+
+## Documentation
+
+Ensure that your project is appropriately commented with all necessary comments and docstrings. That is, if you have created a class, this class must also contain a docstring. Singular functions must also contain a docstring if they are not attached to a class.

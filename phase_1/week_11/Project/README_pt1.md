@@ -56,8 +56,6 @@ To complete this project, you will need to sign up for a free API key via [Polyg
 
 ## Documentation
 
-### DocStrings & Comments
-
 Ensure that your project is appropriately commented with all necessary comments and docstrings. That is, if you have created a class, this class must also contain a docstring. Singular functions must also contain a docstring if they are not attached to a class.
 
 
