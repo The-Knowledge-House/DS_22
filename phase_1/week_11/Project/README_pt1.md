@@ -12,7 +12,7 @@ Since the computing environment at `Godel Trading` does not include 3rd party mo
 
 You will focus on analyzing 5 stock ticker names of your choice in order to demonstrate the functionality of this pipeline. For example, if you'd like to analyze Google, Amazon, Coursera, Netflix, and Facebook, you would utilize the following names within your code: `GOOG`, `AMZN`, `COUR`, `NFLX`, and `META`.
 
-You will use these names to load daily stock data from into a csv from April 1 2021 - April 1 2022 [Polygon](https://polygon.io/). You will then use this subequent csv file to generate a report on each respective stock's standard deviation for both 2021 & 2022.
+You will use these names to load daily stock data from into a csv from March 29 2021 - March 25 2022 [Polygon](https://polygon.io/). You will then use this subequent csv file to generate a report on each respective stock's standard deviation for both 2021 & 2022.
 
 ## Part 1
 
@@ -49,6 +49,10 @@ For now this file will only include the title of your repo along with a short de
 Feel free to name this repository any descriptive name that describes the goal of this project!
 
 ## FAQ
+
+### GitHub
+
+For a general guide as to how we can use GitHub, consult the [following documentation](https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/).
 
 ### Using an API
 

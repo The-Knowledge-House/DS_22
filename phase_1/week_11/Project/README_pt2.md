@@ -13,8 +13,8 @@ Alternatively you can also save each price and day to a list of dictionaries tha
 
 ```
 [
-    {"date"; "2021-04-01", "price": 6.81},
-    {"date"; "2021-04-02", "price": 6.43},
+    {"date"; "2021-03-29", "price": 6.81},
+    {"date"; "2021-03-30", "price": 6.43},
     ...
 ]
 ```
@@ -30,6 +30,22 @@ with open("STOCK.csv", "w", newline='') as outfile:
     writer = csv.writer(outfile)
     # how can I take either my two lists or my dictionary and write them to my outfile?
 ```
+
+This should result in five newly created CSV files in your folder. 
+
+* STOCK1.csv
+* STOCK2.csv
+* STOCK3.csv
+* STOCK4.csv
+* STOCK5.csv
+
+For example, if you decided to analyze `AMZN`, `META`, `DIS`, `HD`, and `TSLA`, you will have the following files after this extraction:
+
+* AMZN.csv
+* META.csv
+* DIS.csv
+* HD.csv
+* TSLA.csv
 
 ## FAQ
 
