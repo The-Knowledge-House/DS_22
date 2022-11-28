@@ -11,6 +11,14 @@ Once you have set your project up, you will create Python code within `extract.p
 
 Alternatively you can also save each price and day to a list of dictionaries that have the keys `day` and `price`. 
 
+```
+[
+    {"date"; "2021-04-01", "price": 6.81},
+    {"date"; "2021-04-02", "price": 6.43},
+    ...
+]
+```
+
 Consider how either data-structure will influence the format of your csv file.
 
 Now that you have this data loaded into a data-structure, you will write it into a csv file via the `open()` function and the `csv` module.
