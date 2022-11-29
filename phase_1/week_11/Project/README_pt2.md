@@ -2,7 +2,7 @@
 
 ## Part 2
 
-Once you have set your project up, you will create Python code within `extract.py` that requests the closing price of your 5 companies from the Polygon API from April 1 2021 to April 1 2022, and saves each day and price into two seperate lists (one called `day` and one called `closing price`). 
+Once you have set your project up, you will create Python code within `extract.py` that requests the closing price of your 5 companies from the Polygon API from March 29 2021 to March 25 2022, and saves each day and price into two seperate lists (one called `day` and one called `closing price`). 
 
 ```
 [6.81, 6.43, 6.21, ...]
