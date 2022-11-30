@@ -13,8 +13,8 @@ Alternatively you can also save each price and day to a list of dictionaries tha
 
 ```
 [
-    {"date"; "2021-03-29", "price": 6.81},
-    {"date"; "2021-03-30", "price": 6.43},
+    {"date": "2021-03-29", "price": 6.81},
+    {"date": "2021-03-30", "price": 6.43},
     ...
 ]
 ```
