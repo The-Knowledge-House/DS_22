@@ -10,7 +10,7 @@ Since the computing environment at `Godel Trading` does not include 3rd party mo
 
 ## Data and Output
 
-You will focus on analyzing 5 stock ticker names of your choice in order to demonstrate the functionality of this pipeline. For example, if you'd like to analyze Google, Amazon, Coursera, Netflix, and Facebook, you would utilize the following names within your code: `GOOG`, `AMZN`, `COUR`, `NFLX`, and `META`.
+You will focus on analyzing 5 stock ticker names of your choice in order to demonstrate the functionality of this pipeline. For example, if you'd like to analyze Google, Amazon, Coursera, Netflix, and Facebook, you would utilize the following names within your code: `GOOG`, `AMZN`, `COUR`, `NFLX`, and `AAPL`.
 
 You will use these names to load daily stock data from into a csv from March 29 2021 - March 25 2022 [Polygon](https://polygon.io/). You will then use this subequent csv file to generate a report on each respective stock's standard deviation for both 2021 & 2022.
 
