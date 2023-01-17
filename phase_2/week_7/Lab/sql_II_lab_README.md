@@ -11,11 +11,8 @@ Note: This file is 70 MB large, so it might take a few minutes to download.
 This csv file will be saved to our postgresql server, as explained in the section below labeled `Steps`. 
 
 This pipeline should accomplish the following requirements: 
-1. Pull the table from our postgresql database using `psycopg2`
-2. Clean the data by:
-    1. removing all flights which were cancelled 
-    2. removing all flights which were diverted 
-    3. removing all flights which have `NaN` values in `ARR_DEL15` or `DEP_DEL15`
+1. Pull the rows from our postgresql database using `psycopg2` for flights that were not diverted nor cancelled.
+2. Clean the data by removing all flights which have `NaN` values in `ARR_DEL15` or `DEP_DEL15`
 3. Generate the average (ratio) of delayed flights for each airline 
 4. Save this table back into our database
 
@@ -56,7 +53,16 @@ The dataset is further described here: https://www.kaggle.com/datasets/divyansh2
 
 ### Step 0: Setup
 
-To begin this 
+To begin this project, we must firstly set up our csv file within our postgres database.
+
+Log into pgAdmin and create a table that describes a table named `flights` 
+
+After we complete this
+
+Files to create:
+* README.md
+* 
+* 
 
 ### Step 1: Pull the Table
 
@@ -74,10 +80,5 @@ To begin this
 
 
 
-# Challenge (Optional): Calculate Fuel-Costs for Airlines
+# Challenge (Optional): Airline Rating vs. Delays
 
-After completing the above pipeline, attempt the following prompt below for a challenge:
-
-To better predict jet-fuel allocation for each airline, the FAA would also like `AeroTrack` to engineer a pipeline that calculates which airlines are the biggest consumers of fuel, along with the 
-
-Since jet-fuel prices do not vary as often as 
