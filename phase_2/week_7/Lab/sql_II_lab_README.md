@@ -12,9 +12,9 @@ This csv file will be saved to our postgresql server, as explained in the sectio
 
 This pipeline should accomplish the following requirements: 
 1. Pull the rows from our postgresql database using `psycopg2` for flights that were not diverted nor cancelled.
-2. Clean the data by removing all flights which have `NaN` values in `ARR_DEL15` or `DEP_DEL15`
-3. Generate the average (ratio) of delayed flights for each airline 
-4. Save this table back into our database
+2. Clean the data by removing all flights which have `NaN` values in `ARR_DEL15` or `DEP_DEL15`.
+3. Generate the average (ratio) of delayed flights for each airline.
+4. Save this table back into our database.
 
 And remember, make sure this pipeline is thoroughly documented.
 
@@ -55,9 +55,25 @@ The dataset is further described here: https://www.kaggle.com/datasets/divyansh2
 
 To begin this project, we must firstly set up our csv file within our postgres database.
 
-Log into pgAdmin and create a table that describes a table named `flights` 
+Log into pgAdmin and create a table that describes a table named `real_flight` in your `flights` database.
 
-After we complete this
+To create this table, you must first utilize the `CREATE TABLE` query to specify the table name & it's attributes. Keep in mind that we must use the present columns as attributes.
+
+For example, `DAY_OF_MONTH` might be an `INT`, while `OP_UNIQUE_CARRIER` could be described as a `CHAR(2)` since the maximum characters of this column is seemingly 2.
+
+Ex:
+```sql
+CREATE TABLE real_flight(
+    DAY_OF_MONTH INT,
+    ...
+);
+```
+
+This query will be executed once within your database.
+
+After we execute this query, we will then work on populating this table using the data saved within our csv file.
+
+To accomplish this we will ...
 
 Files to create:
 * README.md
@@ -66,7 +82,7 @@ Files to create:
 
 ### Step 1: Pull the Table
 
-
+Now that you
 
 ### Step 2 & 3: Clean the Data
 
@@ -81,4 +97,5 @@ Files to create:
 
 
 # Challenge (Optional): Airline Rating vs. Delays
+
 
