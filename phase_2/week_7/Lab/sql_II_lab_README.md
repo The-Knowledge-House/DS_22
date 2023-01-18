@@ -16,9 +16,9 @@ This pipeline should accomplish the following requirements:
 3. Generate the average (ratio) of delayed flights for each airline.
 4. Save this table back into our database.
 
-And remember, make sure this pipeline is thoroughly documented.
-
 These steps are further expanded below.
+
+Make sure this pipeline is thoroughly documented and your `README` provides a brief description of this scripts functionality & purpose.
 
 ## The Data
 
@@ -75,14 +75,15 @@ After we execute this query, we will then work on populating this table using th
 
 To accomplish this we will ...
 
-Files to create:
+After setting up your database, create a GitHub repository within your profile & clone it to your computer.
+
+Once you have this repository created & cloned, create the following files:
 * README.md
-* 
-* 
+* get_delays.py
 
 ### Step 1: Pull the Table
 
-Now that you
+Now that you have your table loaded into your database, pull in your data using `psycopg2`
 
 ### Step 2 & 3: Clean the Data
 
