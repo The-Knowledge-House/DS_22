@@ -14,7 +14,7 @@ This pipeline should accomplish the following requirements:
 1. Pull the rows from our postgresql database using `psycopg2` for flights that were not diverted nor cancelled.
 2. Clean the data by removing all flights which have `NaN` values in `ARR_DEL15` or `DEP_DEL15`.
 3. Generate the average (ratio) of delayed flights for each airline.
-4. Save this table back into our database.
+4. Generate the average (ratio) of delayed flights for each airport.
 
 These steps are further expanded below.
 
@@ -88,7 +88,7 @@ CREATE TABLE real_flight(
 );
 ```
 
-This query will be executed once within your database.
+You should execute this query once within your database.
 
 After we execute this query, we will then work on populating this table using the data saved within our csv file.
 
@@ -104,20 +104,38 @@ All subsequent code will be written in Python within `get_delays.py`.
 
 ### Step 1: Pull the Table
 
-Now that you have your table loaded into your database, pull in your data using `psycopg2` and save it into a pandas dataframe. Be sure to only select rows for flights that were not diverted nor cancelled using your SQL query.
+Now that you have your table loaded into your database, pull in your data using `psycopg2` and save it into a pandas dataframe. Be sure to only select rows for flights that were **not diverted nor cancelled** using your SQL query.
 
 ### Step 2: Clean the Data
 
 Using your `pandas`, drop all rows that contain `NaN` values in either `ARR_DEL15` or `DEP_DEL15`. 
 
-### Step 3: Generate Ratio
+### Step 3: Generate Ratios for Airline
 
-Using `pandas`, create a new dataframe that groups each airline (`OP_UNIQUE_CARRIER`) into groups and calculates the ratio of cancellations 
+Using `pandas`, create a new column within your original dataframe labeled `DELAYED` that will be marked as `1` if either `ARR_DEL15` or `DEP_DEL15` are `True`, and be marked as `0` if both `ARR_DEL15` and `DEP_DEL15` are `False`.
 
-### Step 4: Save the Table in pgAdmin
+After creating this column, create a new dataframe that groups each airline (`OP_UNIQUE_CARRIER`) into groups and calculates the ratio of delays (`DELAYED`) for each airline.
 
-Once you have generated this table, 
+Keep in mind that an average of 1's and 0's creates a ratio that represents how many values are `1` (delayed flights) and how many values are `0` (non-delayed flights).
+
+Sort this delay ratio from highest to lowest, and save this dataframe as a `csv` file within your repository labeled `delayed_airlines.csv`.
+
+### Step 4: Generate Ratios for Airports
+
+After creating this column, create a new dataframe that groups each origin airport (`ORIGIN_AIRPORT_ID`) into groups and calculates the ratio of delays (`DELAYED`) for each airline.
+
+Keep in mind that an average of 1's and 0's creates a ratio that represents how many values are `1` (delayed flights) and how many values are `0` (non-delayed flights).
+
+Sort this delay ratio from highest to lowest, and save this dataframe as a `csv` file within your repository labeled `delayed_airports.csv`.
 
 # Challenge (Optional): Airline Rating vs. Delays
+
+In addition to our delayed flights data, we also have a csv file representing the "JD Powers" ranking of airlines:  https://drive.google.com/file/d/1HqnYzqqh9UvTf-fVH0AF6plHuAEqdKpe/view?usp=share_link 
+
+Load this csv file into your `get_delays.py` file, and [join](https://pandas.pydata.org/docs/user_guide/merging.html#database-style-dataframe-or-named-series-joining-merging) it to your dataframe that describes the ratio of delays per airline. You will use pandas to align each airline with its appropriate ratio of delays, and rating.
+
+Once you create this new joined dataframe, use [linear regression](https://pandas.pydata.org/docs/user_guide/merging.html#database-style-dataframe-or-named-series-joining-merging) to generate an R^2 value for ratio of delays vs. JD powers score. An R^2 value below 0.5 is not significant, aka indicates that ratio of delays might not predict customer satisfaction.
+
+What do you notice about your generated R^2 value? 
 
 
