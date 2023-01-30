@@ -134,8 +134,7 @@ In addition to our delayed flights data, we also have a csv file representing th
 
 Load this csv file into your `get_delays.py` file, and [join](https://pandas.pydata.org/docs/user_guide/merging.html#database-style-dataframe-or-named-series-joining-merging) it to your dataframe that describes the ratio of delays per airline. You will use pandas to align each airline with its appropriate ratio of delays, and rating.
 
-Once you create this new joined dataframe, use [linear regression](https://pandas.pydata.org/docs/user_guide/merging.html#database-style-dataframe-or-named-series-joining-merging) to generate an R^2 value for ratio of delays vs. JD powers score. An R^2 value below 0.5 is not significant, aka indicates that ratio of delays might not predict customer satisfaction.
+Once you create this new joined dataframe, use [linear regression](https://www.statology.org/r-squared-in-python/) to generate an R^2 value for ratio of delays vs. JD powers score. An R^2 value below 0.5 is not significant, aka indicates that ratio of delays might not predict customer satisfaction.
 
 What do you notice about your generated R^2 value? 
-
 
