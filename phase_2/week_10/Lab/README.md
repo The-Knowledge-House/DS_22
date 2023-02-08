@@ -7,7 +7,7 @@ Your dashboard will contain
 * One non-parameterized map, where you plot the concentration of an EPI metric globally
 * One parameterized map, where you plot the concentrations of your multiple new metrics globally
 * One parameterized scatter plot where you compare the relationships between your EPI metric, and multiple new metrics
-* (challenge) make the paramterized scatter plot and map utilize the same metric
+* (challenge) make the parameterized scatter plot and map utilize the same metric
 * a written analysis describing your findings
 
 After completing this dashboard, you will publish a post link to it in the README of your previous mini-project.
