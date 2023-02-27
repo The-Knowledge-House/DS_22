@@ -65,6 +65,7 @@ To find out more about the tables that you are working with, check out the [plan
 Looking at this dataframe, we notice that there are a lot of `sparse` (null-filled) rows. In addition our `description_tokens` is unhelpful in displaying what skills are required for a job. Let's clean up our dataset by doing the following.
 
 **Requirements**
+* Fill in all missing values in the `work_from_home` column to be `False`.
 * Create a new column for each possible skill specified in the `description_tokens` column
     * For example, if the `description_tokens` column contains `['python', 'excel', 'sql']`, you will mark 3 columns labeled `description_tokens_python`, `description_tokens_excel`, `description_tokens_sql` to all  be 1, while all other skills that might appear will be labeled 0 (ex: `description_tokens_tableau`, `description_tokens_java`, etc)
     * This is called getting [dummy variables](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html) or [one-hot-encoding](https://www.educative.io/answers/one-hot-encoding-in-python)
@@ -72,7 +73,6 @@ Looking at this dataframe, we notice that there are a lot of `sparse` (null-fill
     * Save this dataframe with newly engineered features back into the `data/` folder for later use in `eda.ipynb`
 * Create a new dataframe that drops all rows that contain `null` values in the `salary_standardized` column from the newly engineered dataframe above
     * Save this dataframe to your `data/` folder for later use in `predict.ipynb`
-* Fill in all missing values in the `work_from_home` column to be `False`.
 
 **Tools Used**
 * pandas
@@ -93,7 +93,7 @@ Now that we have cleaned and prepared data, we will get to work answering our `i
 
 **Requirements**
 * Perform distribution testing & visualization on `standard_salaries`
-* Perform distribution testing & visualization on `standard_salaries`, grouping `work_from_home == TRUE` and `work_from_home == FALSE` positions together
+* Perform distribution testing & visualization on `standard_salaries` on remote and non-remote positions using the `work_from_home` column
 * Calculate & visualize the frequency of skill-occurence in your dataframe
     * What are the top 5 most-requested skills?
     * Visualize the distribution of `standard_salaries` for `sql` positions
@@ -123,7 +123,7 @@ Now that we have cleaned and prepared data, we will get to work answering our `i
 Lastly, you will create a multivariate regression model using the csv file that contains no null-values in your `standard_salaries` column. 
 
 **Requirements**
-* Create a linear regression model with `standard_salaries` as your dependent variable, and all listed `description_token_skills`, `schedule`, & `work_from_home` as your independent variables.
+* Create a linear regression model with `standard_salaries` as your dependent variable, and all listed `description_token_` columns , `schedule`, & `work_from_home` as your independent variables.
 * Print out it's accuracy (R2 value)
 * Print out it's coefficients `lin.coef_`
 * Create a writeup of the predictive power of your model in your `README`. Does this have good predictive power (is the r2 value high)?
@@ -145,7 +145,8 @@ Your repository will be required to abide by the following structure:
 
 ```yaml
 ├── data
-│   ├── job_salary_skills.csv
+│   ├── df1.csv
+│   ├── df_nonull.csv
 ├── images
 │   ├── remote_work_dist.png
 │   ├── nonremote_work_dist.png
