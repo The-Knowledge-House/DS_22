@@ -71,28 +71,3 @@ We are not done, however, with our transformations. In the final step of this fi
         * etc
 * After converting this column into a list, we can then utilize a sklearn [encoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MultiLabelBinarizer.html) to encode this data
 * Lastly, look up how you can "drop" rows that have null values in a specific column to accomplish the final transformation
-
-
-## eda.ipynb
-
-While we will comprehensively go over this step tomorrow, your `eda` step should entail the following similair visualizations:
-
-
-**Standard Salaries Distribution**
-![image](https://user-images.githubusercontent.com/26397102/223257145-44846b2a-2c7c-4697-b012-64435a6635e2.png)
-
-**Standard Salaries Remote Distribution**
-![image](https://user-images.githubusercontent.com/26397102/223257468-15ab944b-95b2-4380-a884-3a5c23fce269.png)
-
-
-**Standard Salaries Non-remote Distribution**
-![image](https://user-images.githubusercontent.com/26397102/223257647-171cc59e-bc13-4680-8c1f-728146e4bc0c.png)
-
-**Python Salaries Box-Plots**
-![image](https://user-images.githubusercontent.com/26397102/223258178-3f2331d8-5183-4ebf-ab89-3ffafc08b74e.png)
-
-**SQL Salaries Box-Plots**
-![image](https://user-images.githubusercontent.com/26397102/223258565-8065645c-fc80-4008-842e-73c2994a27bd.png)
-
-**Bar-Chart Skills**
-![image](https://user-images.githubusercontent.com/26397102/223259022-f6a72f13-bb5c-4300-ac96-297b41f3d25b.png)
