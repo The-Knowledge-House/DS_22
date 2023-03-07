@@ -36,7 +36,7 @@ Non_Remote
 (897, 137)
 ```  
 **Histogram**  
-![image](https://user-images.githubusercontent.com/26397102/223507872-f745ee90-398e-4fdd-aed2-d464194649a3.png)  
+![image](https://user-images.githubusercontent.com/26397102/223509564-9acf4a13-9a81-4a35-b40d-03caf179eb91.png)
 
 **KS Test**  
 ```
@@ -53,7 +53,7 @@ Remote
 (1332, 137)
 ```  
 **Histogram**  
-![image](https://user-images.githubusercontent.com/26397102/223509564-9acf4a13-9a81-4a35-b40d-03caf179eb91.png)
+![image](https://user-images.githubusercontent.com/26397102/223507872-f745ee90-398e-4fdd-aed2-d464194649a3.png)  
 
 **KS Test**  
 ```
