@@ -20,13 +20,13 @@ Attempts in this domain are fairly fresh and limited, so this would be an intere
 
 ## Problem Definition
 
-Solve the problem of cooridination between student & instructor to create an automated learning assistant that will assist the process of self-discovery in an intelligent and purposeful workflow.
-
-In addition, if we prevent the chat model from giving answers and ONLY support testing, this will likewise support novel discovery within the student.
+A web-interface that utilizes ChatGPT to analyze TKH problem sets & generates comprehensive and useful hints for self-studying.
 
 ## Value
 
 This is valuable to TKH, as teaching staff can dedicate more time to generating asynchronous material & lecture prep.
+* Solve the problem of cooridination between student & instructor to create an automated learning assistant that will assist the process of self-discovery in an intelligent and purposeful workflow.
+* In addition, if we prevent the chat model from giving answers and ONLY support testing, this will likewise support novel discovery within the student.
 
 This is valuable to other education organizations, as this provides another case study of the potential applications of AI in useful & interesting ways.
 
