@@ -19,4 +19,4 @@ Lastly, where will you host these datasets?
 
 ## Minimal Viable Model
 
-Plan & start minimal viable model
+Plan & start coding minimal viable model.
