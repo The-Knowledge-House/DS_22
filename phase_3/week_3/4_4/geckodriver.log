@@ -471,3 +471,18 @@ JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error:
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1680656052698	geckodriver	INFO	Listening on 127.0.0.1:63394
+1680656055753	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "6339 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\saidmf\\AppData\\Local\\Temp\\rust_mozprofileQSFX2N"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1680656056244	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1680656056250	Marionette	INFO	Listening on port 63406
+Read port: 63406
+WebDriver BiDi listening on ws://127.0.0.1:63395
+1680656056448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\saidmf\\AppData\\Local\\Temp\\rust_mozprofileQSFX2N\\search.json.mozlz4", (void 0)))
+console.error: ({})
+DevTools listening on ws://127.0.0.1:63395/devtools/browser/ced6db03-e785-4744-a53a-0161f2f42518
