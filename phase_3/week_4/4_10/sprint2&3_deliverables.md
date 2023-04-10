@@ -31,4 +31,4 @@ Similar to the `eda.ipynb` file of yours End of Phase 2 Project.
 Demo the results of this EDA in a quick 5 minutes via guided presentation or slides.
 At most, this should be one jupyter notebook.
 
-You will implement these jupyter notebooks in your GitHub repository and push your changes. Every team member should contribute to developing this code. You will submit your Github link to the following Google classroom link with all completed files.
+You will implement these jupyter notebooks in your GitHub repository and push your changes. Every team member should contribute to developing this code. You will submit your Github link to the following Google classroom link with all completed files: https://classroom.google.com/c/NTQ2NzMzMDQwMDM5/a/NjAzNDQwMDA3Mjc5/details
