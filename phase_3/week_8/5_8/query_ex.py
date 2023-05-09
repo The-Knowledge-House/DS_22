@@ -12,7 +12,7 @@ def main():
     session = Session(engine)
 
     entry = ''
-    while(True):
+    while True:
         entry = input("What information would you like to extract? Enter respective keys listed below \n \
                        1: Info 1 \
                        2: Info 2 \

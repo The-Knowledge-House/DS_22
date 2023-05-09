@@ -1,12 +1,10 @@
 ## Sprint 5 Deliverables
 
-### Psycopg2 Script
+### Develop a Schema in SQL
 
-For sprint 5, you will create a script that uses `psycopg2` to create and insert data into a schema. Once again, you will be utilizing the amazon `rds` instance to save your data.
+You will write a SQL script to create a schema and the subsequent tables that belong to this schema. Take a look at `fix-me-week5` to figure out how this schema should be written.
 
-This code should connect to your database using the same pattern that as the code in the fule `psycopg_example.py`. In addition, you should also be absolutely certain that your repository does not expose any database connection information.
-
-This script will exist in the `sql` folder of your GitHub repo.
+You will develop this script and push it to your GitHub repository. Be sure to test this script in pgAdmin to ensure its functionality. 
 
 ### Further Develop Documentation
 

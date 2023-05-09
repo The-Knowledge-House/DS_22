@@ -48,11 +48,3 @@ You will represent any relationships within your tables as foreign keys. For exa
 When brainstorming foreign keys, consider the following question: which foreign key will allow me to make reliable joins across my tables (if relevant).
 
 Note that some tables (or perhaps even entire databases) will not have foreign keys!
-
-### Develop a Schema in SQL
-
-And lastly, you will write a SQL script to create a schema and the subsequent tables that belong to this schema. Take a look at `fix-me-week5` to figure out how this schema should be written.
-
-You will develop this script and push it to your GitHub repository. Be sure to test this script in pgAdmin to ensure its functionality. 
-
-You will be submitting a link to your GitHub profile as part of your Sprint 4 deliverables. This will be due on Wednesday `4/26`.

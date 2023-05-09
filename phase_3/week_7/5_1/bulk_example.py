@@ -27,19 +27,6 @@ conn = psycopg2.connect(**params)
 
 # with is something called a context manager : opens and closes a connection for you
 with conn.cursor() as cursor:
-    # READ FILES IN PYTHON
-    # SPRINT 5 (already complete) (in other file)
-    '''
-    with open('phase_3/week_6/4_25/schema.sql', 'r') as schema:
-        # read --> reads in entire file
-        queries = schema.read()
-        print(queries)
-        # we are starting a transaction (or continuing)
-        cursor.execute(queries)
-    # commit your changes
-    conn.commit()
-    '''
-
     # (PART OF) SPRINT 6
     # DUE UNTIL 5/10 (WEDNESDAY OF NEXT WEEK)
     with open('phase_3/week_7/data/customers.csv', 'r') as f:    

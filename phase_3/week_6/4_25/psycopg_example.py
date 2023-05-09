@@ -37,4 +37,8 @@ with conn.cursor() as cursor:
         # we are starting a transaction (or continuing)
         cursor.execute(queries)
     # commit your changes
-    conn.commit()
+    try:
+        conn.commit()
+    except Exception as e:
+        print(e)
+        conn.rollback()
