@@ -2,7 +2,7 @@
 
 ### Implement Extract & Transform
 
-After completing the setup of your Amazon rds databases from Sprint 5, you will then implement code to extract data from your csv files (multiple hopefully), perform transformations such as cleaning, and then load your csv file into your database.
+After completing the setup of your Amazon rds databases from Sprint 5, you will then implement code to extract data from your csv files (multiple hopefully), perform transformations such as cleaning ^ munging, and then load your csv file into your database.
 
 This will be completed via 2 seperate scripts:
 
