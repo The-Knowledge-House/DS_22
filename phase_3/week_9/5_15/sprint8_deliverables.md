@@ -14,17 +14,13 @@ This will be completed within the same script as in Sprint 7:
 
 * `eda.ipynb`
 
-### Begin CDA
+### Plan CDA
 
 Once completing `EDA`, you should utilize the insights gleaned from this exploration to further transform your data and confirm your findings by utilizing statistical learning models and hypothesis tests.
 
-For example, did your data display non-normality? This could indicate that you should normalize your dataset through the removal of outliers or log-normalization.
+For example, did your data display non-normality? This could indicate that you should normalize your dataset through the removal of outliers or log-normalization. Perhaps you can also utilize a non-parametric regressor to discover patterns & insights.
 
-Perhaps you can also utilize a non-parametric regressor to discover patterns & insights.
-
-You should create at least 4 prediction-tasks for your data & select the model that displays the least error within your test set. However, you should also utilize the statistical inference from the other 3 models to motivate your discussion & findings.
-
-Depending on your prediction-task, you should either utilize regressors or classifiers.
+You should plan to generate at least 4 prediction-tasks for your data. Depending on your prediction-task, you should either plan to utilize regressors or classifiers.
 
 For regressors you could use:
 * Linear Regression
@@ -38,44 +34,27 @@ Whereas for classifiers you could use:
 * Decision Trees
 * Random Forest Classifiers
 
-Feel free to utilize powerful statistical learning methods that we have not yet learned about! However, be cautious with utilizing complex non-parametric models, as these could lead to over-fit predictions that do not generalize will to the real world.
+Feel free to research more powerful statistical learning methods that we have not yet learned about! However, be cautious when utilizing complex non-parametric models, as these could lead to over-fit predictions that do not generalize will to the real world.
 
-These 4 models should be implemented in 4 seperate scripts:
+These 4 models should be planned in 4 seperate scripts via pseudocode:
 
 * `model1.ipynb`
 * `model2.ipynb`
 * `model3.ipynb`
 *` model4.ipynb`
 
-Feel free to name these jupyter notebooks appropriately (e.g. linear regression could be called `linreg.ipynb`).
+Feel free to name these jupyter notebooks appropriately (e.g. linear regression could be called `linreg.ipynb`). Discuss the motivations for these models with your team.
 
-### CDA Example
+### CDA Plan Example
 
 The following describes an example `CDA` workflow for 4 methods of predicting salaries based on job-training requirements.
 
 * Remove outliers for salaries, log-normalize bootcamp duration, and utilize a linear regressor with backward selection
 * Remove outliers for salaries, log-normalize bootcamp duration, and utilize the LASSO for automatic selection
 * Remove outliers for salaries, keep bootcamp duration, and utilize the LASSO for automatic selection
-* Remove outliers for salaries, keep bootcamp duration, and utilize a RandomForestRegressor with a max-depth of 3
+* Remove outliers for salaries, keep bootcamp duration, and utilize a RandomForestRegressor with optimal max-depth
 
 By observing all selected features for these 4 models, we could potentially observe that bootcamp features predict for higher bootcamp salaries.
-
-### Draft Findings
-
-After completing your `EDA`, draft your observations in a succint document (at most 3 graphs!) that detail what information you've gleaned from your visual analysis. This document must answer describe the following aspects of the dataset.
-
-Please ensure that this section is well-edited and concise. Think of this as a formal report that multiple individuals will utilize for business decisions. Do NOT include the place-holder text below.
-
-> ## Distributions
-> (place-holder text) What distributions did you notice throughout your dataset? Were any
-> attributes normally distributed? If not, what methods can you take to force normality?
-> 
-> ## Metrics
-> What interesting metrics did you glean from your dataset? Did any box-plots or confidence intervals
-> seem significant? 
->
-> ## Relationships
-> Did 
 
 ### Further Develop Documentation
 
