@@ -16,7 +16,7 @@ print(df$density)
 # get kurtosis
 print(kurtosis(df$density))
 
-# view dharacteristics of density via a Cullen & Fey Graph
+# view characteristics of density via a Cullen & Fey Graph
 # https://stats.stackexchange.com/questions/404633/understanding-the-cullen-and-frey-plot
 descdist(df$density, discrete = FALSE)
 
@@ -25,3 +25,11 @@ descdist(df$density, discrete = FALSE)
 # https://www.statisticshowto.com/logistic-distribution/
 
 # Download: https://posit.co/download/rstudio-desktop/
+
+# for real estate
+
+dfestate <- read.csv("phase_3/week_4/data/realestate.csv")
+
+# view characteristics of density via a Cullen & Fey Graph
+# https://stats.stackexchange.com/questions/404633/understanding-the-cullen-and-frey-plot
+# descdist(dfestate$Y.house.price.of.unit.area, discrete = FALSE)
