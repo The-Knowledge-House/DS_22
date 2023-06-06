@@ -15,7 +15,13 @@ CREATE OR REPLACE FUNCTION schema.get_todays_date() RETURNS VARCHAR AS $$
 LANGUAGE plpgsql;
 
 -- function 2
-CREATE OR REPLACE FUNCTION cyber.largest_intrusions() RETURNS INT AS $$ 
+
+-- CREATE FUNCTION schema.function_name() RETURNS data_type AS $$
+--      (code)
+--    $$
+-- LANGUAGE plpgsql; 
+
+CREATE FUNCTION cyber.largest_intrusions() RETURNS INT AS $$
     DECLARE
     	name_of_company VARCHAR(255);
     BEGIN
@@ -24,8 +30,8 @@ CREATE OR REPLACE FUNCTION cyber.largest_intrusions() RETURNS INT AS $$
             WHERE ... 
         INTO name_of_company;
         RETURN name_of_company;
-    END; $$ 
-LANGUAGE plpgsql;
+    END; $$
+LANGUAGE plpgsql; -- this is a unique version of SQL (hey! I'm using a specific version of SQL)
 
 -- function 3 
 CREATE OR REPLACE FUNCTION market.print_hello_world() RETURNS VARCHAR AS $$ 
