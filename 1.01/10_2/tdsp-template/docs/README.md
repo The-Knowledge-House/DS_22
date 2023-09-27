@@ -1,3 +1,3 @@
 # docs
 
-In this folder
+In this folder we place relevant documentation

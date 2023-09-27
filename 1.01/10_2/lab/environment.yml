@@ -1,0 +1,36 @@
+name: ds23
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - statsmodels
+  - jupyter
+  - jupyterlab
+  - notebook
+  - ipython
+  - ipykernel
+  - tensorflow
+  - keras
+  - pytorch
+  - torchvision
+  - torchaudio
+  - xgboost
+  - lightgbm
+  - catboost
+  - nltk
+  - spacy
+  - plotly
+  - bokeh
+  - joblib
+  - tqdm
+  - pip
+  - pip:
+    - opencv-python
+    - imbalanced-learn
