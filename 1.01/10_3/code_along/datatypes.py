@@ -18,3 +18,5 @@ off = False
 foobar = True
 
 print(word)
+print(pi)
+print(word, pi)
