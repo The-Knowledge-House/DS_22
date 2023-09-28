@@ -1,6 +1,20 @@
-x = 3
-x = x + 2
+"""
+basic data types
+"""
 
-y = input("type something here.")
+# numeric: integer
+num1 = 3
+num2 = num1 + 2
 
-print(x, y)
+# numeric: float
+pi = 3.14
+
+# string
+word = "hello"
+
+# boolean
+on = True
+off = False
+foobar = True
+
+print(word)

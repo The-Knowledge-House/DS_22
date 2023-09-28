@@ -19,6 +19,7 @@ dependencies:
   - tensorflow
   - keras
   - pytorch
+  - u8darts-all
   - torchvision
   - torchaudio
   - xgboost
@@ -34,3 +35,4 @@ dependencies:
   - pip:
     - opencv-python
     - imbalanced-learn
+    - streamlit
