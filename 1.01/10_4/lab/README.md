@@ -1,71 +1,65 @@
-# Version Control Lab with Python and Git
+# verson-control-lab
 
 ## Objective
-This lab aims to introduce you to the basics of version control using Git and GitHub. By the end of this exercise, you'll know how to:
-1. Create a new repository on GitHub.
-2. Clone the repository to your local machine.
-3. Make changes to your Python code and commit them.
-4. Push your changes back to the GitHub repository.
+Introduce version control basics using Git and GitHub. By the end of this lab, you should:
+1. Setup Git with your personal details.
+2. Create and use a personal access token on GitHub.
+3. Know how to create, clone, commit to, and push from a repository.
 
 ## Prerequisites
 1. An account on [GitHub](https://github.com/).
 2. [Git](https://git-scm.com/) installed on your computer.
 3. Basic knowledge of Python.
 
-## Part 1: Create a New Repository on GitHub
+## Part 1: Setting Up Git
+
+Before using Git, you should configure your name and email address as they'll be associated with your commits. 
+
+Open your terminal or command prompt and run:
+
+```bash
+git config --global user.name "Your Full Name"
+git config --global user.email "youremail@example.com"
+```
+
+Replace "Your Full Name" with your actual name and "youremail@example.com" with your actual email address.
+
+## Part 2: Creating a Personal Access Token on GitHub
 
 1. Log in to your GitHub account.
-2. Click the '+' icon on the top right corner and select `New repository`.
-3. Name your repository `version-control-lab`.
-4. Add a description if you like.
-5. Choose `Public` for the repository's visibility.
-6. Initialize the repository with a README file.
-7. Click `Create repository`.
+2. Click on your profile picture in the top right and select `Settings`.
+3. In the left sidebar, click on `Developer settings`.
+4. Click on `Personal access tokens` in the left sidebar.
+5. Click the `Generate new token` button.
+6. Give your token a descriptive name.
+7. Under scopes, select the checkbox `repo` to grant access to your repositories.
+8. Click the `Generate token` button at the bottom.
+9. **Important**: Copy the generated token and store it somewhere safe. You won't be able to see it again!
 
-## Step 2: Clone the Repository to Your Local Machine
+## Part 3: Use the Token with Git
 
-Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then run:
+When you clone or push to a repository for the first time, you'll be prompted for a username and password. 
 
-```bash
-git clone https://github.com/YOUR_USERNAME/version-control-lab.git
-cd version-control-lab
-```
-Replace `YOUR_USERNAME` with your actual GitHub username.
+- For the username: Enter your GitHub username.
+- For the password: **Use the personal access token you just created**, not your GitHub password.
 
-### Step 3: Create a Simple Python Program
+## Part 4: Create a New Repository on GitHub
 
-Using your favorite text editor or IDE, create a new Python file in the cloned directory named `hello_world.py` with the following content:
+Follow the earlier instructions to create a repository named `version-control-lab`.
 
-```python
-def hello_world():
-    return "Hello, World!"
+## Part 5: Clone the Repository
 
-if __name__ == "__main__":
-    print(hello_world())
-```
+Follow the previous instructions to clone the `version-control-lab` repository to your local machine.
 
-## Step 4: Commit Your Changes
+## Part 6: Create a Simple Python Program
 
-1. Open your terminal or command prompt and navigate to the `version-control-lab` directory if you aren't already there.
-2. Run the following commands:
+Follow the previous instructions to create a `hello_world.py` script.
 
-```bash
-git add hello_world.py
-git commit -m "Add hello_world Python script"
-```
+## Part 7: Commit and Push
 
-## Step 5: Push Your Changes to GitHub
-
-Run the following command to push your changes to the GitHub repository:
-
-```bash
-git push origin main
-```
+Follow the previous instructions to add, commit, and push the `hello_world.py` script to your GitHub repository.
 
 ## Bonus Challenge
-1. Modify the `hello_world.py` file to take a name as an argument and greet that name. For example, `hello("Alice")` should return "Hello, Alice!".
-2. Commit and push your changes as you did in Steps 4 and 5.
+Same as before: modify the script to greet by name, then commit and push.
 
 ## Submission
-
-This exercise will **not** be submitted for grading.

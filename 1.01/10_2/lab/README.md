@@ -63,6 +63,10 @@ If you see the success message `SUCCESS!``, your environment is functioning prop
 conda deactivate
 ```
 
+## Bonus Challenge
+
+
+
 ## Submission
 
 This exercise will **not** be submitted for grading. However, you will not be able to run code without creating an environment.
