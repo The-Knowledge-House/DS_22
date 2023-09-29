@@ -9,7 +9,6 @@ Introduce version control basics using Git and GitHub. By the end of this lab, y
 ## Prerequisites
 1. An account on [GitHub](https://github.com/).
 2. [Git](https://git-scm.com/) installed on your computer.
-3. Basic knowledge of Python.
 
 ## Part 1: Setting Up Git
 
@@ -18,11 +17,11 @@ Before using Git, you should configure your name and email address as they'll be
 Open your terminal or command prompt and run:
 
 ```bash
-git config --global user.name "Your Full Name"
+git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
 
-Replace "Your Full Name" with your actual name and "youremail@example.com" with your actual email address.
+Replace "Your Name" with your actual name and "youremail@example.com" with the email address that you used when signing up for GitHub.
 
 ## Part 2: Creating a Personal Access Token on GitHub
 
@@ -60,6 +59,8 @@ Follow the previous instructions to create a `hello_world.py` script.
 Follow the previous instructions to add, commit, and push the `hello_world.py` script to your GitHub repository.
 
 ## Bonus Challenge
-Same as before: modify the script to greet by name, then commit and push.
+Create a repository for project 1 and push the template code provided. Choose either normal or challenging based on which difficulty you'd like to tackle.
 
 ## Submission
+
+This exercise will **not** be submitted for grading.
