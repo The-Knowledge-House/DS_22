@@ -1,5 +1,8 @@
-# take in a number
+# TODO: take in a number
+x = ...
 
-# check if negative, transform if necessary
+# TODO: check if negative, transform if necessary
+...
 
-# print out new number
+# TODO: print out new number
+...
