@@ -70,7 +70,7 @@ conda deactivate
 
 ## Bonus Challenge
 
-Follow the same workflow to activate the `tdsp` environment specified in the `tdsp-template` folder. After setting up this environment, run `streamlit run rats.py`.
+Follow the same workflow to activate the `tdsp` environment specified in the `tdsp-template` folder. After setting up this environment, run `streamlit run 10_2/tdsp-template/code/visualize/rats.py`.
 
 ## Submission
 
