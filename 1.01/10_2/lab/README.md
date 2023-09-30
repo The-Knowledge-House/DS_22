@@ -35,11 +35,13 @@ If this results in an error, this means that your setup is not complete.
 
 ## Part 2: Create & activate a conda environment
 
-Now that you can run `conda` commands in your terminal, we will begin by creating a conda environment. 
+Now that you can run `conda` commands in your terminal, we will begin by creating a conda environment. Notice the `environment.yml` file in this folder. This file outlines exactly which Python [packages](https://www.geeksforgeeks.org/python-packages/) we will use throughout the fellowship. 
 
-Notice the `environment.yml` file in this folder. This file outlines exactly which Python [packages](https://www.geeksforgeeks.org/python-packages/) we will use throughout the fellowship. 
+To get started, follow the respective guide starting at [step 3](https://saturncloud.io/blog/how-to-create-a-conda-environment-based-on-a-yaml-file-a-guide-for-data-scientists/#step-3-create-the-conda-environment). Be sure that you specify the full respective path of the environment.yml file (`10_2/lab/environment.yml`) when creating your conda environment. If you did not specify the correct path, your terminal will output:
 
-To get started, follow the respective guide starting at [step 3](https://saturncloud.io/blog/how-to-create-a-conda-environment-based-on-a-yaml-file-a-guide-for-data-scientists/#step-3-create-the-conda-environment).
+```bash
+EnvironmentFileNotFound: '...' file not found
+```
 
 As our conda environment is named `ds23`, you will run the following command to activate your environment.
 
@@ -47,7 +49,7 @@ As our conda environment is named `ds23`, you will run the following command to 
 conda activate ds23
 ```
 
-Going forward, you will always activate an environment before coding.
+If your environment has been succesfully activated, you will see `(ds23)` at the start of your terminal. Going forward, you will always activate an environment before coding. Note: This process will probably take anywhere from 5-10 minutes to complete.
 
 ## Part 3: Verify and Deactivate
 
@@ -65,10 +67,8 @@ conda deactivate
 
 ## Bonus Challenge
 
-
+Follow the same workflow to activate the `drawer` environment specified in the `tdsp-template/environment.yml` file in the `tdsp-template` folder and run the module labeled `run.py` using the documentation listed in the code.
 
 ## Submission
 
-This exercise will **not** be submitted for grading. However, you will not be able to run code without creating an environment.
-
-If you are done early, feel do guide your peers in completing this workflow.
+This exercise will **not** be submitted for grading. 

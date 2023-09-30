@@ -9,6 +9,7 @@
 # kilometers in a mile.
 
 
+
 # 3. If you run a 10 kilometer race in 42 minutes 42 seconds, what is your
 # average pace (time per mile in minutes and seconds)? What is your average
 # speed in miles per hour?

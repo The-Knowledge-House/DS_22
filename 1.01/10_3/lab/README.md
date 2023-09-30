@@ -41,7 +41,7 @@ print(ans)
 
 ## Bonus Challenge
 
-
+Access the file `bonus.py` and create a script that implements the functionality described in the comments. This part of the lab is optional and purely designed for challenge. Be sure to struggle with a question for 15 minutes before reaching out to a human or a language model. 
 
 ## Submission
 

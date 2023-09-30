@@ -1,4 +1,4 @@
-name: phase1
+name: tdsp
 channels:
   - main
 dependencies:
@@ -10,11 +10,6 @@ dependencies:
   - seaborn
   - scikit-learn
   - statsmodels
-  - jupyter
-  - jupyterlab
-  - notebook
-  - ipython
-  - ipykernel
   - pip
   - pip:
-    - imbalanced-learn
+    - streamlit

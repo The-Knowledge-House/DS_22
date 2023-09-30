@@ -7,8 +7,8 @@ Introduce version control basics using Git and GitHub. By the end of this lab, y
 3. Know how to create, clone, commit to, and push from a repository.
 
 ## Prerequisites
-1. An account on [GitHub](https://github.com/).
-2. [Git](https://git-scm.com/) installed on your computer.
+* An account on [GitHub](https://github.com/).
+* [Git](https://git-scm.com/) installed on your computer.
 
 ## Part 1: Setting Up Git
 
@@ -59,7 +59,7 @@ Follow the previous instructions to create a `hello_world.py` script.
 Follow the previous instructions to add, commit, and push the `hello_world.py` script to your GitHub repository.
 
 ## Bonus Challenge
-Create a repository for project 1 and push the template code provided. Choose either normal or challenging based on which difficulty you'd like to tackle.
+Create a repository for project 1 and push the template code provided. 
 
 ## Submission
 
