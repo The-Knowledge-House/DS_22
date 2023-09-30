@@ -44,22 +44,22 @@ When you clone or push to a repository for the first time, you'll be prompted fo
 
 ## Part 4: Create a New Repository on GitHub
 
-Follow the earlier instructions to create a repository named `version-control-lab`.
+Follow the [listed instructions](https://docs.github.com/en/get-started/quickstart/create-a-repo) to create a repository called `version-control-lab` in your GitHub profile.
 
 ## Part 5: Clone the Repository
 
-Follow the previous instructions to clone the `version-control-lab` repository to your local machine.
+Follow the the [listed instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) to clone the `version-control-lab` repository to your local machine.
 
-## Part 6: Create a Simple Python Program
+## Part 6: Copy over tdsp-template to cloned repo
 
-Follow the previous instructions to create a `hello_world.py` script.
+Using your file navigator or terminal, copy the folders and files in the `tdsp-template` to your `version-control-lab` repository.
 
 ## Part 7: Commit and Push
 
-Follow the previous instructions to add, commit, and push the `hello_world.py` script to your GitHub repository.
+Follow the [instructions](https://dev.to/mrfrontend/git-101--step-2-add-stage-commit--push-3p3p) starting at "Check local changes" to add, commit, and push the `tdsp-template` files and folders to your GitHub repository.
 
 ## Bonus Challenge
-Create a repository for project 1 and push the template code provided. 
+Create a repository for project 1 and push the template code provided from canvas. 
 
 ## Submission
 

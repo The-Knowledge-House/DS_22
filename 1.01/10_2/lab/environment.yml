@@ -1,6 +1,6 @@
 name: phase1
 channels:
-  - main
+  - default
 dependencies:
   - python=3.9
   - numpy
@@ -12,7 +12,6 @@ dependencies:
   - statsmodels
   - jupyter
   - jupyterlab
-  - notebook
   - ipython
   - ipykernel
   - pip
