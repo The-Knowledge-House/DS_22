@@ -1,0 +1,6 @@
+1. complete this poll question
+2. learn about test-driven development
+3. learn about github actions
+4. do the lab
+5. ???
+6. sleep
