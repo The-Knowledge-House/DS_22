@@ -37,7 +37,7 @@ As a reminder, here are the steps (refer to PowerPoint for graphics):
 
 ### Part 2 Python Calculation
 
-Open the `bivar.py` file and follow the instructions in the notebook as you do the same calculations but using Python!
+Open the `bivar.ipynb` file and follow the instructions in the notebook as you do the same calculations but using Python!
 
 We will first do a step-by-step method and then use pandas to help us out with the same steps but in a more efficient manner.
 
