@@ -30,10 +30,10 @@ As a reminder, here are the steps (refer to PowerPoint for graphics):
 5. add all the values of (4) together
 6. square the values of (2) squared deviance of x
 7. square the values of (3) squared deviance of y
-8. multiply (6)and (7) for each x,y pair (similar to step 4)
-9. Add the values of (8) all together
-10. Take the sqrt of (9)
-11. Divide (5) by (10)
+8. Add the values of (6) and add up the values of (7) then multiply them together
+9. Take the sqrt of (8)
+10. Divide (5) by (9)
+
 
 ### Part 2 Python Calculation
 
