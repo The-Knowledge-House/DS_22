@@ -98,6 +98,27 @@ HAVING post_count > 0 AND avg_likes > 50;
 # EXERCISES
 For the following exercises, use the images as a guide to know when you have the right answer. Since we are all using the same database the answers should be pretty similar! But if it's slightly off, it might be due to random selection by SQL unless we specifically have an order. 
 
-1. Retrieve the usernames and email addresses of users who joined before '2023-01-01', try to figure out how to filter out `NULL` values
+Do your best to figure out which table fits the best for the question. If you need help, please ask!
+
+1. Retrieve the usernames and email addresses of users who joined before '2015-01-01' but after `2013-01-01`, try to figure out how to filter out `NULL` values
 
 ![Alt text](images\q1.png)
+
+2. Find the total number of posts made by each user. Display the user's ID and the count of posts. BONUS: Try to order by `DESC` order.
+
+![Alt text](images\q2.png)
+
+3. Find the month with the highest number of new user sign-ups. Display the month and the count of new users. Show only the highest month.
+Hint: You may need to use the EXTRACT() function. See the following for help: https://www.w3resource.com/PostgreSQL/extract-function.php 
+
+The examples show specific TIMESTAMPS but assume you can replace those with your column.
+
+![Alt text](images\q3.png)
+
+4. Find the average number of likes by user. Show only the top 5. Hint: `id` in the likes table refers to each individual like
+
+![Alt text](images\q4.png)
+
+5. Find the users who have more than 8 posts. No hints on this one! Might be a bit of a challenge.
+
+![Alt text](images\q5.png)
