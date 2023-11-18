@@ -129,9 +129,12 @@ The examples show specific TIMESTAMPS but assume you can replace those with your
 
 ![Alt text](images\q3.png)
 
-4. Find the average number of likes by user. Show only the top 5. Hint: `id` in the likes table refers to each individual like
+4. Find the average length of a post caption. Then find the top 5 longest. Hint: you may need to find what the `LENGTH` function for PostGreSQL is
 
-![Alt text](images\q4.png)
+![Alt text](images\q4a.png)
+
+![Alt text](images\q4b.png)
+
 
 5. Find the users who have more than 8 posts. No hints on this one! Might be a bit of a challenge.
 
