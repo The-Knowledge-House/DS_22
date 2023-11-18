@@ -6,63 +6,84 @@ The goal of this lab is to provide participants with hands-on experience in usin
 ## Lab Outline
 
 ### 1. Connecting to the Database (5 minutes)
-Participants should connect to the database where the tables `users` and `posts` are stored.
+Please make sure you are connected to the database in your PGAdmin4 and have properly loaded the Instagram SQL.
 
 ### 2. SELECT Statement
-- Introduce the basic structure of the SELECT statement.
-- Perform simple SELECT queries to retrieve data from the `users` and `posts` tables.
+The SELECT statement is the core of SQL. Without the SELECT statement we would not be able to pull in any of the data we need.
 
-   ```sql
-   -- Retrieve all columns from the users table
-   SELECT * FROM users;
+```sql
+-- Retrieve all columns from the users table
+SELECT * FROM users;
 
-   -- Retrieve specific columns from the posts table
-   SELECT post_id, user_id, caption, created_at 
-   FROM posts;
+-- Retrieve specific columns from the posts table
+SELECT id, user_id, caption, created_at 
+FROM posts;
 
-   -- Retrieve posts with renamed columns
-    SELECT post_id AS "Post ID", 
+-- Retrieve posts with renamed columns
+    SELECT id AS "Post ID", 
     user_id AS "User ID", 
     caption AS "Post Caption"
     FROM posts;
-    ```
+```
+
 
 ### 3. WHERE Clause and Filtering
+The WHERE Clause lets us filter our data. This is great for a couple reasons. 
+1. It minimizes the amount of data that we are processing at once since SQL performs this filtering first, this makes our query faster.
+2. We can focus on the data that is the most interesting to us without having to sift through as much data
+3. It can show us where there might be issues in our data.
+
 
 ```sql
 -- Retrieve posts with a specific user_id
-SELECT * FROM posts WHERE user_id = 1;
-
--- Retrieve users who joined after a certain date and have more than 500 followers
-SELECT * FROM users WHERE joined_at > '2023-01-01' AND followers > 500;
-
--- Retrieve posts with likes greater than 1000
-SELECT * FROM posts WHERE likes > 1000;
-
--- Retrieve posts with likes greater than 1000 OR posted by user_id 2
 SELECT * 
 FROM posts 
-WHERE likes > 1000 OR user_id = 2;
+WHERE user_id = 1;
+
+-- Retrieve users who do not have an empty bio
+SELECT username, bio
+FROM users
+WHERE bio IS NOT NULL;
+
+-- Retrieve posts that were created after 2015 
+SELECT id, created_at
+FROM posts
+WHERE created_at > '2015-01-01'
+
+-- Retrieve posts with likes created after 2015  AND posted by user_id 123
+SELECT user_id, id, created_at
+FROM posts
+WHERE created_at > '2015-01-01' AND user_id = 123;
 ```
 
 ### 4. GROUP BY Clause
+Group by allows to bunch a bunch of rows together. For example, the same person can post multiple times and we want to know how many posts they've made. We would group by user ID's and then do a COUNT(*) function in order to get a count.
 
 ```sql
 -- Count the number of posts by each user
-SELECT user_id, COUNT(*) AS post_count FROM posts GROUP BY user_id;
-
-```
-
-### 5. Aggregation Functions
-```sql
--- Find the average number of likes per post
-SELECT user_id, AVG(likes) AS avg_likes 
+SELECT user_id, COUNT(*) AS post_count 
 FROM posts 
 GROUP BY user_id;
 
 ```
 
+### 5. Aggregation Functions
+
+There are other aggregate functions in SQL other than just COUNT(). Let's try a few.
 ```sql
+-- Find the average number of likes per post
+-- This introduces the idea of a subquery, because of how we have our tables structured we can't just do "AVG(LIKES)"
+-- We'll explain how this works and you'll see it tomorrow!
+SELECT AVG(total_likes)
+FROM (
+SELECT post_id, COUNT(id) total_likes
+FROM likes 
+WHERE post_id IS NOT NULL
+GROUP BY post_id
+ORDER BY total_likes DESC
+) like_counts;
+
+
 -- Find the total number of posts made by each user
 SELECT user_id, COUNT(*) AS post_count 
 FROM posts 
@@ -79,22 +100,15 @@ GROUP BY user_id;
 ### 6. HAVING Clause
 
 ```sql
--- Find users with an average number of likes greater than 50
-SELECT user_id, AVG(likes) AS avg_likes 
-FROM posts 
+-- Find users who have given more than 50 likes
+SELECT user_id, COUNT(likes) AS total_likes 
+FROM likes 
 GROUP BY user_id 
-HAVING avg_likes > 50;
+HAVING COUNT(likes) > 50;
 
 ```
 
-```sql
--- Find users who posted at least once and have an average likes greater than 50
-SELECT user_id, COUNT(*) AS post_count, AVG(likes) AS avg_likes
-FROM posts
-GROUP BY user_id
-HAVING post_count > 0 AND avg_likes > 50;
 
-```
 # EXERCISES
 For the following exercises, use the images as a guide to know when you have the right answer. Since we are all using the same database the answers should be pretty similar! But if it's slightly off, it might be due to random selection by SQL unless we specifically have an order. 
 
