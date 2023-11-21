@@ -118,6 +118,17 @@ Do your best to figure out which table fits the best for the question. If you ne
 
 ![Alt text](images\q1.png)
 
+SELECT user_id, COUNT(*) AS post_count 
+FROM posts 
+GROUP BY user_id;
+
+```sql
+SELECT user_id, COUNT(*) AS post_count 
+FROM posts 
+GROUP BY user_id;
+
+```
+
 2. Find the total number of posts made by each user. Display the user's ID and the count of posts. BONUS: Try to order by `DESC` order.
 
 ![Alt text](images\q2.png)
