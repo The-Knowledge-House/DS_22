@@ -1,0 +1,19 @@
+name: phase1
+channels:
+  - default
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - statsmodels
+  - jupyter
+  - jupyterlab
+  - ipython
+  - ipykernel
+  - pip
+  - pip:
+    - imbalanced-learn

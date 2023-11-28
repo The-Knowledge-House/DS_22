@@ -1,3 +1,4 @@
-# DS_22
+# DS_23 Phase 1
 
-A central repository of tasks, labs, & notes. Access specific phase/week/modules for details.
+A repository of classwork, labs, a
+

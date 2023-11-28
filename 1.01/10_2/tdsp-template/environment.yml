@@ -1,0 +1,16 @@
+name: tdsp
+channels:
+  - default
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - statsmodels
+  - pydeck
+  - pip
+  - pip:
+    - streamlit
